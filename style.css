@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    padding: 0;
+    /* background:linear-gradient(red,green); */
+    display: grid;
+    place-items: center;
+    min-height:100vh;
+    background-color:aliceblue;
+}
+.container{
+    position:relative;
+    width:400px;
+    height: 400px;
+    box-shadow: 10px 10px 10px  rgba(0,0,0,.1),-10px -10px 10px rgba(255,255,255,1),
+    inset 10px 10px 10px rgba(0,0,0,.1),
+    inset -10px -10px 10px rgba(255,255,255,1) ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #444;
+
+}
+.container #dycalendar{
+    width:100%;
+   padding: 20px;
+}
+#dycalendar table{
+    width: 100%;
+    margin-top:40px;
+}
+
+#dycalendar table td{
+ font-weight: 700px;
+ color: #444;
+ padding: 10px;
+}
+#dycalendar .dycalendar-header{
+ font-weight: 700;
+ color: #444;
+}
+
+#dycalendar .dycalendar-target-date{
+ color:#f8f8f8;
+ background: #444;
+}
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: auto;
+        margin-bottom: 100px;
+        padding: 20px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,.1), -5px -5px 5px rgba(255,255,255,1),
+        inset 5px 5px 5px rgba(0,0,0,.1),
+        inset -5px -5px 5px rgba(255,255,255,1);
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    #dycalendar table{
+        margin-top:20px;
+    }
+
+    #dycalendar table td{
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+/* Tablet Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        margin-bottom: 100px;
+        padding: 30px;
+        box-shadow: 7px 7px 7px rgba(0, 0, 0, .5), -7px -7px 7px rgba(255, 255, 255, 1),
+        inset 7px 7px 7px rgba(0, 0, 0, .5),
+        inset -7px -7px 7px rgba(255, 255, 255, 1);
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    #dycalendar table {
+        margin-top: 30px;
+    }
+
+    #dycalendar table td {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
